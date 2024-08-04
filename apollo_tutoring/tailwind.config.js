@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'infinite-scroll': 'infinite-scroll 10s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' }
+        }
+      },
       colors: {
         "standard_white": "#F4F7F5",
         "standard_navy": "#3247D1",
@@ -22,7 +31,7 @@ module.exports = {
         headFont: ['"oswald"', "sans-serif"],
         paraFont: ['"lato"', "sans-serif"],
         // Add more custom font families as needed
-      }
+      },
     },
   },
   plugins: [],
