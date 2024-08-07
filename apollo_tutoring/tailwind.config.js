@@ -20,7 +20,9 @@ module.exports = {
         "standard_white": "#F4F7F5",
         "standard_navy": "#3247D1",
         "standard_teal": "#82D4BB",
-        "nav_colour": "#083D77"
+        "nav_colour": "#083D77",
+        "non_active_bg": "#AAAAAA",
+        "non_active_fg": "#6E6E6E"
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
