@@ -46,6 +46,13 @@ export default function Home() {
             <li>
               <span>Cognition</span>
             </li>
+            <li>
+              <span>Commitment</span>
+            </li>
+            <li>
+              <span>Patience</span>
+            </li>
+
           </ul>
           <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_li]:font-paraFont animate-infinite-scroll" aria-hidden="true">
             <li>
@@ -74,6 +81,12 @@ export default function Home() {
             </li>
             <li>
               <span>Cognition</span>
+            </li>
+            <li>
+              <span>Commitment</span>
+            </li>
+            <li>
+              <span>Patience</span>
             </li>
           </ul>
         </div>
