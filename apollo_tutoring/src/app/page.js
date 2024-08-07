@@ -93,17 +93,17 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      <div id="about-us" className="grid grid-cols-1 lg:grid-cols-3 lg:mx-10 my-10">
-        <div className="lg:col-span-2 px-5">
-          <h2 className="font-headFont text-nav_colour text-5xl text-center mb-5">About Us</h2>
-          <p className="font-paraFont text-black mx-8 ">Learning course content can be difficult for many students, especially with their commitments outside of school. Students in high school need to balance their academics, extracurriculars, and a job all at once, which means that they often need to get ahead on course material before the school year begins. We offer online lessons and homework help to high school students to help jump-start their knowledge on both math and science courses. Our aim is to help students from Grades 9 to 11 with the transition from one grade to another, and facilitate the creation of strong technical skills to help them succeed. </p>
+      <div id="about-us" className="grid grid-cols-1 lg:grid-cols-3 lg:mx-10 my-10 h-fit">
+        <div className="lg:col-span-2 px-7">
+          <h2 className="text-nav_colour h2">About Us</h2>
+          <p className="font-paraFont text-black mx-10 xl:mx-24">Learning course content can be difficult for many students, especially with their commitments outside of school. Students in high school need to balance their academics, extracurriculars, and a job all at once, which means that they often need to get ahead on course material before the school year begins. We offer online lessons and homework help to high school students to help jump-start their knowledge on both math and science courses. Our aim is to help students from Grades 9 to 11 with the transition from one grade to another, and facilitate the creation of strong technical skills to help them succeed. </p>
         </div>
         <div>
-          <img src="images/orange_planet.png" className=" px-5 max-w-full w-96"/>
+          <img src="images/orange_planet.png" className=" px-5 max-w-full w-96 mx-auto"/>
         </div>
       </div>
       <div className="bg-standard_navy py-5">
-      <h2 className="font-headFont text-standard_white text-5xl text-center mb-5">Testimonials</h2>
+      <h2 className="text-standard_white h2">Testimonials</h2>
         <Carousel_Component />
       </div>
     </main>

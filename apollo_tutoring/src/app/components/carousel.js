@@ -56,15 +56,15 @@ const card_data = [
 function Card(props) {
   return (
     <article className= {props.index === props.state ? 'active card': 'card'} >
-      <h5 className="font-headFont font-bold text-xl">{props.last_name}, {props.first_name} ({props.age})</h5>
+      <h5 className="font-headFont font-bold text-2xl my-2">{props.last_name}, {props.first_name} ({props.age})</h5>
       <p>{props.description}</p>
-      <p>Completed {props.num_tutoring} tutoring sessions</p>
+      <p className="font-paraFont italic text-xl font-light my-3">Completed {props.num_tutoring} tutoring sessions</p>
       <div className="flex flex-row mx-auto">
         { (props.index !== props.state) ? 
         Array.from({ length: 5 }, (_, index) => <img key={crypto.randomUUID()} src = "images/stars/inactive_star.svg" className="star"/>) 
         : (
-        [Array.from({ length: props.stars }, (_, index) => <img key={crypto.randomUUID()} src = "images/stars/star.svg"/>) ,
-        Array.from({ length: 5-props.stars }, (_, index) => <img key={crypto.randomUUID()} src = "images/stars/non_filled_star.svg"/>) ]
+        [Array.from({ length: props.stars }, (_, index) => <img key={crypto.randomUUID()} src = "images/stars/star.svg" className = "star"/>) ,
+        Array.from({ length: 5-props.stars }, (_, index) => <img key={crypto.randomUUID()} src = "images/stars/non_filled_star.svg" className="star"/>) ]
         )
         } 
       </div>
@@ -79,17 +79,17 @@ export function Carousel_Component() {
   
 const CustomRightArrow = ({ onClick }) => {
   return (
-    <button onClick={() => onClick()} className="absolute top-1/2 right-4 w-fit px-2 py-0 cursor-pointer text-primary-400 bg-nav_colour text-4xl rounded-full items-center self-center place-self-center">
-      <p className="my-auto transform -translate-y-1">{'>'}</p>
+    <button onClick={() => onClick()} className="right-4 carousel_button">
+      <img src="images/arrows/carousel_arrow.svg" className="transform rotate-180"/>
     </button>
   )
 }
 
 const CustomLeftArrow = ({ onClick }) => {
   return (
-    <button onClick={() => onClick()} className="absolute top-1/2 left-4 w-fit px-2 py-0 cursor-pointer text-primary-400 bg-nav_colour text-4xl rounded-full items-center self-center place-self-center">
-      <p className="my-auto transform -translate-y-1">{'<'}</p>
-    </button>
+    <button onClick={() => onClick()} className="left-4 carousel_button">
+      <img src="images/arrows/carousel_arrow.svg" className=""/>
+      </button>
   )
 }
 

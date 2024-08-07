@@ -2,24 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h2 {
+    @apply font-headFont text-5xl text-center mb-5
+  }
+
+}
+
 @layer components {
   .nav-element {
     @apply text-standard_white hover:text-standard_teal 
     transition-colors ease-in-out  z-20 font-paraFont text-xl py-1 relative h-fit 
-    align-middle self-center text-center mt-16 md:mt-0 px-3
+    align-middle self-center text-center mt-16 md:mt-0 px-3 
   }
   .active {
     @apply text-standard_teal
   }
 
   .card {
-    @apply bg-non_active_bg mx-5 px-5 py-3 text-black
+    @apply bg-non_active_bg mx-5 px-5 py-3 text-black transition-colors ease-in duration-150
   }
+
+
   .card.active {
     @apply bg-standard_white 
   }
   
   .star {
-    @apply mx-1
+    @apply mx-1 w-7 lg:w-10
+  }
+
+  .carousel_button {
+    @apply absolute top-1/2 w-10 h-10 px-2 py-0 cursor-pointer bg-nav_colour text-4xl rounded-full items-center self-center place-self-center hover:bg-standard_teal transition-colors ease-in duration-75
+  }
+
+  .h2 {
+    @apply font-headFont text-5xl text-center mb-5
   }
 }
