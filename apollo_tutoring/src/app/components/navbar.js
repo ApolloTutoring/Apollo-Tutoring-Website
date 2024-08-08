@@ -60,7 +60,7 @@ export function NavBar() {
       <img src= {"/" + navImage } className='w-10 md:hidden ms-4 me-5' onClick={changeNav} ></img>
     </button>
     {showNavbar &&
-    <div className ="flex flex-col md:flex-row md:me-3 md:relative fixed top-20 md:top-0 h-screen md:h-auto w-screen md:w-auto items-center right-auto left-auto md:left-0 md:right-0 z-40 active" id = "nav-elements">
+    <div className ="flex flex-col md:flex-row md:me-3 md:relative fixed top-20 md:top-0 h-screen md:h-auto w-screen md:w-auto items-center right-auto left-auto md:left-0 md:right-0 z-40 active bg-nav_colour gap-0" id = "nav-elements">
       <Link href = "/" className = {path === '/' ? 'active nav-element' : 'nav-element'}>
         Home
       </Link>
