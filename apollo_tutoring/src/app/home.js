@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import { useEffect } from "react";
 import dynamic from "next/dynamic";
 import { NavBar } from "./components/navbar";
+import Contact from "./components/contactus";
 /*
 const NavBar = dynamic(() => import('.//components/navbar.js').then((mod) => mod.NavBar), {
   loading: () => <p>Loading...</p>,
@@ -33,7 +34,7 @@ export function Home() {
       </div>
       <div className="bg-nav_colour">
         <div className="w-full inline-flex flex-nowrap h-auto bg-nav_colour py-6 overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-          <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_li]:font-paraFont animate-infinite-scroll">
+          <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_li]:font-paraFont [&_li]:text-white animate-infinite-scroll">
             <li>
               <span>Creativity</span>
             </li>
@@ -69,7 +70,7 @@ export function Home() {
             </li>
 
           </ul>
-          <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_li]:font-paraFont animate-infinite-scroll" aria-hidden="true">
+          <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_li]:font-paraFont [&_li]:text-white animate-infinite-scroll" aria-hidden="true">
             <li>
               <span>Creativity</span>
             </li>
@@ -116,8 +117,17 @@ export function Home() {
         </div>
       </div>
       <div className="bg-standard_navy py-5">
-      <h2 className="text-standard_white h2">Testimonials</h2>
-        <Carousel_Component />
+        <h2 className="text-standard_white h2">Testimonials</h2>
+          <Carousel_Component />
+      </div>
+      <div>
+        <h1 className="font-headFont text-4xl text-center my-5 text-standard_navy">Contact Us</h1>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 h-fit md:mx-10 divide-x-0 md:divide-x-2 divide-y-2 md:divide-y-0">
+        <div className="">instagram content</div>
+        <div className="shadow-2xl rounded-xl ">
+          <Contact />
+        </div>
       </div>
       < Footer />
     </main>
