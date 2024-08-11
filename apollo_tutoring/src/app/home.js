@@ -122,16 +122,34 @@ export function Home() {
         <h2 className="text-standard_white h2">Testimonials</h2>
           <Carousel_Component />
       </div>
-      <div className="bg-standard_teal h-auto p-10">
+      <div className="w-3/4 mx-auto my-10">
+        <h2 className="text-4xl text-standard_navy">Our Experience</h2>
+        <div className="grid sm:grid-cols-3 grid-cols-1">
+          <div className="m-5 p-10 bg-standard_teal h-auto rounded-2xl">
+            <h3 className="text-center text-black text-2xl font-headFont mb-5">IB Diploma Program</h3>
+            <p className="text-center text-black font-paraFont">Learning course content can be difficult for many students, especially with their commitments outside of school. Students in high school need to balance their academics, extracurriculars, and a job all at once, which means that they often need to get ahead on course material before the school year begins.</p>
+          </div>
+          <div className="m-5 p-5 bg-standard_navy h-auto rounded-2xl">
+            <div className="h-64 w-64 relative overflow-hidden">
+              <img src="/images/Untitled_design_1.jpeg" className=" w-full h-full absolute bottom-0 right-0 transform translate-x-1/2 translate-y-1/2" alt="Decorative Image"></img>
+            </div>
+          </div>
+          <div className="m-5 p-10 bg-standard_teal h-auto rounded-2xl">
+            <h3 className="text-center text-black text-2xl font-headFont mb-5">IB Diploma Program</h3>
+            <p className="text-center text-black font-paraFont">Learning course content can be difficult for many students, especially with their commitments outside of school. Students in high school need to balance their academics, extracurriculars, and a job all at once, which means that they often need to get ahead on course material before the school year begins.</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-standard_navy h-auto p-10">
         <div className="mx-auto h-fit sm:w-3/4 w-full m-20 rounded-2xl bg-white">
-          <h1 className="font-headFont font-bold text-2xl text-standard_navy text-center pt-5 m-5">Book a Session NOW!</h1>
+          <h1 className="font-headFont font-bold text-2xl text-standard_navy text-center pt-5 mt-5">Book a Session NOW!</h1>
           <BookaSession />
         </div>
       </div>
 
       <div className="h-3 bg-standard_teal"></div>
       <div>
-        <h1 className="font-headFont text-4xl text-center my-5 text-standard_navy">Contact Us</h1>
+        <h2 className="font-headFont text-4xl text-center my-5 text-standard_navy">Contact Us</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 h-fit md:mx-10 divide-x-0 md:divide-x-2 divide-y-2 md:divide-y-0">
         <div className="">instagram content</div>
