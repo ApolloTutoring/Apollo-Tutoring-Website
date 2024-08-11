@@ -6,6 +6,8 @@ import { useEffect } from "react";
 import dynamic from "next/dynamic";
 import { NavBar } from "./components/navbar";
 import Contact from "./components/contactus";
+import BookaSession from "./components/bookasession";
+
 /*
 const NavBar = dynamic(() => import('.//components/navbar.js').then((mod) => mod.NavBar), {
   loading: () => <p>Loading...</p>,
@@ -120,6 +122,14 @@ export function Home() {
         <h2 className="text-standard_white h2">Testimonials</h2>
           <Carousel_Component />
       </div>
+      <div className="bg-standard_teal h-auto p-10">
+        <div className="mx-auto h-fit sm:w-3/4 w-full m-20 rounded-2xl bg-white">
+          <h1 className="font-headFont font-bold text-2xl text-standard_navy text-center pt-5 m-5">Book a Session NOW!</h1>
+          <BookaSession />
+        </div>
+      </div>
+
+      <div className="h-3 bg-standard_teal"></div>
       <div>
         <h1 className="font-headFont text-4xl text-center my-5 text-standard_navy">Contact Us</h1>
       </div>
@@ -129,6 +139,7 @@ export function Home() {
           <Contact />
         </div>
       </div>
+      <div className="mt-5 h-3 bg-standard_teal"></div>
       < Footer />
     </main>
 
