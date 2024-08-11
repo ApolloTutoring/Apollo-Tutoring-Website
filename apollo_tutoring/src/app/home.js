@@ -129,8 +129,8 @@ export function Home() {
             <h3 className="text-center text-black text-2xl font-headFont mb-5">IB Diploma Program</h3>
             <p className="text-center text-black font-paraFont">Learning course content can be difficult for many students, especially with their commitments outside of school. Students in high school need to balance their academics, extracurriculars, and a job all at once, which means that they often need to get ahead on course material before the school year begins.</p>
           </div>
-          <div className="m-5 p-5 bg-standard_navy h-auto rounded-2xl">
-            <div className="h-64 w-64 relative overflow-hidden">
+          <div className="m-5 bg-standard_navy h-auto rounded-2xl">
+            <div className="w-full h-full relative overflow-hidden">
               <img src="/images/Untitled_design_1.jpeg" className=" w-full h-full absolute bottom-0 right-0 transform translate-x-1/2 translate-y-1/2" alt="Decorative Image"></img>
             </div>
           </div>
@@ -151,10 +151,12 @@ export function Home() {
       <div>
         <h2 className="font-headFont text-4xl text-center my-5 text-standard_navy">Contact Us</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 h-fit md:mx-10 divide-x-0 md:divide-x-2 divide-y-2 md:divide-y-0">
-        <div className="">instagram content</div>
+      <div className="grid grid-cols-1 md:grid-cols-2 h-fit md:mx-10 divide-x-0 md:divide-x-2 divide-y-2 md:divide-y-0 gap-4">
         <div className="shadow-2xl rounded-xl ">
           <Contact />
+        </div>
+        <div className="shadow-2xl rounded-xl">
+          <iframe src="https://embedsocial.com/api/pro_hashtag/898c1f5d6b23404c0a60fe8791bc889ab9ac2a84" className="w-full h-full" frameborder="0" marginheight="" marginwidth="5"></iframe>
         </div>
       </div>
       <div className="mt-5 h-3 bg-standard_teal"></div>
