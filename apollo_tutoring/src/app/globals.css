@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   h2 {
     @apply font-headFont text-5xl text-center mb-5
@@ -10,11 +11,13 @@
 }
 
 @layer components {
+
   .nav-element {
     @apply text-standard_white hover:text-standard_teal 
     transition-colors duration-100 ease-in-out  z-20 font-paraFont text-xl py-1 relative 
-    align-middle self-center text-center mt-16 md:mt-0 px-3 no-underline  block 
+    align-middle self-center text-center mt-16 md:mt-0 px-3 no-underline block hover:cursor-hover
   }
+
   .active.nav-element {
     @apply text-standard_teal underline 
   }

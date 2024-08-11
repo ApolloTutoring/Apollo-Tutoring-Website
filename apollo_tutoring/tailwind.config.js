@@ -34,6 +34,10 @@ module.exports = {
         paraFont: ['"lato"', "sans-serif"],
         // Add more custom font families as needed
       },
+      cursor: {
+        'main': 'url(/images/rocket.svg), pointer',
+        'hover': 'url(/images/satellite.svg), pointer',
+      }
     },
   },
   plugins: [],

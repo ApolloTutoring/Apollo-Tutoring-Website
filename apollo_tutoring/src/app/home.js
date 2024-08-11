@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image";
+import { useSpring, animated } from "@react-spring/web";
 import { Carousel_Component } from "./components/carousel";
 import Footer from "./components/footer";
 import { useEffect } from "react";
@@ -19,7 +20,7 @@ const NavBar = dynamic(() => import('.//components/navbar.js').then((mod) => mod
 export function Home() {
 
   return (
-    <main className="bg-white">
+    <main className="bg-white cursor-main">
       <NavBar />
       <div className="relative h-screen bg-standard_navy overflow-hidden flex flex-col items-center">
         <div className="text-center">
@@ -31,7 +32,7 @@ export function Home() {
           </h2>
         </div>
         <div className="relative w-full flex-grow">
-          <img src="/images/Untitled_design_1.jpeg" className="absolute bottom-0 top-7 left-0 right-0 mx-auto object-cover object-top overflow-clip w-2/3"></img>
+          <img src="/images/Untitled_design_1.jpeg" className="absolute bottom-0 top-7 left-0 right-0 mx-auto object-cover object-top overflow-clip w-2/3 hover:-translate-y-5 ease-out duration-500 hover:w-3/4 transition-all"></img>
         </div>
       </div>
       <div className="bg-nav_colour">
@@ -109,13 +110,13 @@ export function Home() {
           </ul>
         </div>
       </div>
-      <div id="about-us" className="grid grid-cols-1 lg:grid-cols-3 lg:mx-10 my-10 h-fit">
-        <div className="lg:col-span-2 px-7">
+      <div id="about-us" className="grid grid-cols-1 lg:grid-cols-3 lg:mx-10 my-10 min-h-fit">
+        <div className="lg:col-span-2 px-7 pb-20">
           <h2 className="text-nav_colour h2">About Us</h2>
           <p className="font-paraFont text-black mx-10 xl:mx-24">Learning course content can be difficult for many students, especially with their commitments outside of school. Students in high school need to balance their academics, extracurriculars, and a job all at once, which means that they often need to get ahead on course material before the school year begins. We offer online lessons and homework help to high school students to help jump-start their knowledge on both math and science courses. Our aim is to help students from Grades 9 to 11 with the transition from one grade to another, and facilitate the creation of strong technical skills to help them succeed. </p>
         </div>
         <div>
-          <img src="images/orange_planet.png" className=" px-5 max-w-full w-96 mx-auto"/>
+          <img src="images/orange_planet.png" className=" px-5 w-7/12 mx-auto ease-out duration-500 hover:w-8/12 transition-all"/>
         </div>
       </div>
       <div className="bg-standard_navy py-5">
