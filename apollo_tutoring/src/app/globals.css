@@ -42,4 +42,9 @@
   .h2 {
     @apply font-headFont text-5xl text-center mb-5
   }
+
+  .entry {
+    @apply font-paraFont text-black hover:text-white hover:bg-standard_navy placeholder:text-black  hover:placeholder:text-white
+    bg-standard_teal transition-colors ease-in duration-150 ps-5 py-1 rounded-md
+  }
 }
