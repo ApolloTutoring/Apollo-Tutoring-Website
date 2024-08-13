@@ -109,11 +109,11 @@ export function Home() {
           <img src="images/orange_planet.png" className=" px-5 w-7/12 mx-auto ease-out duration-500 hover:w-8/12 transition-all"/>
         </div>
       </div>
-      <div className="bg-standard_navy py-5">
+      <div className="bg-standard_navy py-5" id="testimonials">
         <h2 className="text-standard_white h2">Testimonials</h2>
           <Carousel_Component />
       </div>
-      <div className="w-3/4 mx-auto my-10">
+      <div className="w-3/4 mx-auto my-10" id="our-experiences">
         <h2 className="text-4xl text-standard_navy">Our Experience</h2>
         <div className="grid lg:grid-cols-3 grid-cols-1">
           <div className="m-5 p-10 bg-standard_teal h-auto rounded-2xl">
@@ -129,15 +129,10 @@ export function Home() {
           </div>
         </div>
       </div>
+      <div id="contact-us">
       <ContactUs />
-      <div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 h-fit md:mx-10 divide-x-0 md:divide-x-2 divide-y-2 md:divide-y-0 gap-4">
-        <div className="shadow-2xl rounded-xl ">
-        </div>
-
-      </div>
-          <iframe src="https://embedsocial.com/api/pro_hashtag/898c1f5d6b23404c0a60fe8791bc889ab9ac2a84" className="w-full h-96" frameborder="0" marginheight="" marginwidth="5" ></iframe>
+      <iframe src="https://embedsocial.com/api/pro_hashtag/898c1f5d6b23404c0a60fe8791bc889ab9ac2a84" className=" mt-3 w-11/12 block h-96 mx-auto" frameborder="0" marginheight="" ></iframe>
       < Footer />
     </main>
 

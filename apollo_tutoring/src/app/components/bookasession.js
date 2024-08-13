@@ -103,8 +103,7 @@ export function BookaSession() {
     };
   
     return (
-      <div className="bg-standard_navy pt-5 rounded-2xl">
-        <h1 className="text-center text-2xl text-white font-headFont">Get in Touch</h1>
+      <div className="pt-5 rounded-2xl">
         <form onSubmit={onSubmit}>
           <label className="flex items-center gap-2 m-5 ">
             <input type="text" name="name" className="grow entry" placeholder="Name" required />
@@ -131,14 +130,14 @@ export function BookaSession() {
       
     }
     return(
-      <div className= {"h-auto py-10 " + ((isContact == 0) ? "bg-standard_teal": "bg-standard_navy") }  >
+      <div className= {"h-auto py-10 transition-colors duration-150 ease-in-out " + ((isContact == 0) ? "bg-standard_teal": "bg-standard_navy") }  >
         <h2 className="font-headFont text-4xl text-center my-5 text-white">Contact Us</h2>
         <select className="rounded-sm mx-auto block"  value={isContact} onChange={e => setContact(e.target.value)}>
           <option value={0} >Book a Session</option>
           <option value={1} >General Inquiry</option> 
         </select>
         <div className="mx-auto h-fit sm:w-3/4 w-full rounded-2xl bg-white">
-          <h1 className="font-headFont font-bold text-2xl text-standard_navy text-center pt-5 mt-5">Book a Session NOW!</h1>
+          <h3 className="font-headFont font-bold text-2xl text-standard_navy text-center pt-5 mt-5">{ (isContact == 0) ? "Book a Session NOW!" : "General Inquiry" }</h3>
           {
             (isContact == 0) ? 
             <BookaSession /> :

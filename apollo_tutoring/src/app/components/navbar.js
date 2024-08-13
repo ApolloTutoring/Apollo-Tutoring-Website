@@ -55,7 +55,10 @@ export function NavBar() {
         
   return(
   <nav className="max-w-full bg-nav_colour flex justify-between items-center m-0 lg:px-3 h-20 pt-4 pb-2 border-0 sticky md:relative left-0 right-0 top-0 z-40">
-    <Link href="/" className='h-full w-fit'><img src= "images/main_logo.png" className="h-full ms-5 md:hidden lg:block xl:me-8"/></Link>
+    <div className='flex flex-row h-full align-middle items-center font-headFont	text-2xl'>
+    <Link href="/" className='h-full w-fit'><img src= "images/main_logo.png" className="hover:cursor-hover h-full ms-5 md:hidden lg:block xl:me-8"/></Link>
+    <h5 className='text-white  tracking-wider ms-3'>APOLLO TUTORING</h5>
+    </div>
     <button>
       <img src= {"/" + navImage } className='w-10 md:hidden ms-4 me-5' onClick={changeNav} ></img>
     </button>
@@ -64,13 +67,16 @@ export function NavBar() {
       <Link href = "/" className = {path === '/' ? 'active nav-element' : 'nav-element'}>
         Home
       </Link>
-      <Link href = "/about-us" className = {path === '/about-us' ? 'active nav-element' : 'nav-element'}>
+      <Link href = "#about-us" className = "nav-element">
         About Us
       </Link>
-      <Link href = "/our-initiatives" className = {path === '/our-initiatives' ? 'active nav-element' : 'nav-element'}>
-        Our Initiatives
+      <Link href = "#testimonials" className = "nav-element">
+        Testimonials
       </Link>
-      <Link href = "/contact-us" className = {path === '/contact-us' ? 'active nav-element' : 'nav-element'}>
+      <Link href = "#our-experiences" className = "nav-element">
+        Our Experiences
+      </Link>
+      <Link href = "#contact-us" className = "nav-element">
         Contact Us
       </Link>
    </div>

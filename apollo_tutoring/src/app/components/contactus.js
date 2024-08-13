@@ -27,8 +27,7 @@ export default function Contact() {
     };
   
     return (
-      <div className="bg-standard_navy pt-5 rounded-2xl">
-        <h1 className="text-center text-2xl text-white font-headFont">Get in Touch</h1>
+      <div className= "bg-white pt-5 rounded-2xl">
         <form onSubmit={onSubmit}>
           <label className="flex items-center gap-2 m-5 ">
             <input type="text" name="name" className="grow entry" placeholder="Name" required />
