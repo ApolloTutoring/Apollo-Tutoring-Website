@@ -31,14 +31,14 @@ export function BookaSession() {
         <form onSubmit={onSubmit}>
             <div className="px-10 grid sm:grid-cols-2 grid-cols-1">
                 <div className="mx-1 grid grid-cols-2">
-                    <input type="text" placeholder="First Name" className="input input-bordered my-2 sm:my-5 mx-1" name="first_name"/>
-                    <input type="text" placeholder="Last Name" className="input input-bordered my-2 sm:my-5 mx-1" name="last_name"/>
+                    <input type="text" placeholder="First Name" className="entry input input-bordered my-2 sm:my-5 mx-1" name="first_name"/>
+                    <input type="text" placeholder="Last Name" className="entry input input-bordered my-2 sm:my-5 mx-1" name="last_name"/>
                 </div>
                 <div className="mx-1">
-                    <input type="text" placeholder="Email" name="email" className="input input-bordered w-full m-2 sm:m-5 mx-1 sm:mx-auto" />
+                    <input type="text" placeholder="Email" name="email" className="entry input input-bordered w-full m-2 sm:m-5 mx-1 sm:mx-auto" />
                 </div>
                 <div className="mx-1 grid grid-cols-2">
-                    <select class="select select-bordered mb-4 mx-1" name="grade">
+                    <select class="entry select select-bordered mb-4 mx-1" name="grade">
                       <option disabled selected default>Select your Grade</option>
                       <option>1</option>
                       <option>2</option>
@@ -52,7 +52,7 @@ export function BookaSession() {
                       <option>10</option>
                       <option>11</option>
                     </select>
-                    <select class="select select-bordered mb-4 mx-1" name="subject">
+                    <select class="entry select select-bordered mb-4 mx-1" name="subject">
                       <option disabled selected>Select a Subject</option>
                       <option>Math</option>
                       <option>Chemistry</option>
@@ -60,10 +60,10 @@ export function BookaSession() {
                     </select>
                 </div>
                 <div className="mx-1">
-                    <input type="text" placeholder="Availability (Ideal time and day of the week)" name="availability" className="input input-bordered w-full mx-1 text-sm sm:mx-auto" />
+                    <input type="text" placeholder="Availability (Ideal time and day of the week)" name="availability" className="entry input input-bordered w-full mx-1 text-sm sm:mx-auto" />
                 </div>
                 <div className="sm:col-span-2 mx-1 my-1">
-                  <textarea class="textarea textarea-bordered w-full h-20 mx-1" placeholder="Notes (Program, Learning Disability, etc.):" name="notes"></textarea>
+                  <textarea class="entry textarea textarea-bordered w-full h-20 mx-1" placeholder="Notes (Program, Learning Disability, etc.):" name="notes"></textarea>
                 </div>
                 <div className="sm:col-span-2 mx-1 mb-5">
                   <button className="btn bg-primary text-white w-full mx-1" type="submit">Book a Session</button>
@@ -106,13 +106,13 @@ export function BookaSession() {
       <div className="pt-5 rounded-2xl">
         <form onSubmit={onSubmit}>
           <label className="flex items-center gap-2 m-5 ">
-            <input type="text" name="name" className="grow entry" placeholder="Name" required />
+            <input type="text" name="name" className="grow input input-bordered entry bg-white" placeholder="Name" required />
           </label>
           <label className="flex items-center gap-2 m-5">
-            <input type="text" className="grow entry" placeholder="Email" name="email" required />
+            <input type="text" className="grow input input-bordered entry bg-white" placeholder="Email" name="email" required />
           </label>
           <div className="mx-5">
-              <textarea className=" w-full entry" placeholder="Message" name="message" required></textarea>
+              <textarea className=" w-full input input-bordered entry bg-white" placeholder="Message" name="message" required></textarea>
               <button className="btn font-paraFont font-bold text-standard_navy my-5 w-full" type="submit">Submit Form</button>
               <span className="text-white mx-auto font-paraFont font-bold">{result}</span>
           </div>  
@@ -132,7 +132,7 @@ export function BookaSession() {
     return(
       <div className= {"h-auto py-10 transition-colors duration-150 ease-in-out " + ((isContact == 0) ? "bg-standard_teal": "bg-standard_navy") }  >
         <h2 className="font-headFont text-4xl text-center my-5 text-white">Contact Us</h2>
-        <select className="rounded-sm mx-auto block"  value={isContact} onChange={e => setContact(e.target.value)}>
+        <select className="entry select w-3/4 sm:w-3/12 rounded-2xl text-center mx-auto block"  value={isContact} onChange={e => setContact(e.target.value)}>
           <option value={0} >Book a Session</option>
           <option value={1} >General Inquiry</option> 
         </select>
