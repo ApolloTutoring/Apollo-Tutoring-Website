@@ -132,7 +132,7 @@ export function Home() {
           </div>
           <div className="m-5 bg-standard_navy h-auto rounded-2xl">
             <div className="w-full h-full relative overflow-hidden">
-              <img src="/images/Untitled_design_1.jpeg" className=" w-full h-full absolute bottom-0 right-0 transform translate-x-1/2 translate-y-1/2" alt="Decorative Image"></img>
+              <img src="/images/Untitled_design_1.jpeg" className=" w-full h-full absolute bottom-0 right-0 transform translate-x-1/2 translate-y-1/2"></img>
             </div>
           </div>
           <div className="m-5 p-10 bg-standard_teal h-auto rounded-2xl">
