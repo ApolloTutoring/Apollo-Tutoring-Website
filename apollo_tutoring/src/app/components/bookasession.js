@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 
-export default function BookaSession() {
+export function BookaSession() {
     const [result, setResult] = React.useState("");
   
     const onSubmit = async (event) => {
@@ -74,5 +74,78 @@ export default function BookaSession() {
   
       </div>
     );
+  }
+
+  export function Contact() {
+    const [result, setResult] = React.useState("");
+  
+    const onSubmit = async (event) => {
+      event.preventDefault();
+      setResult("Sending....");
+      const formData = new FormData(event.target);
+  
+      formData.append("access_key", "e6b70426-c5b4-4333-b608-e6edee8e81fd");
+  
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+  
+      const data = await response.json();
+  
+      if (data.success) {
+        setResult("Form Submitted Successfully");
+        event.target.reset();
+      } else {
+        console.log("Error", data);
+        setResult(data.message);
+      }
+    };
+  
+    return (
+      <div className="pt-5 rounded-2xl">
+        <form onSubmit={onSubmit}>
+          <label className="flex items-center gap-2 m-5 ">
+            <input type="text" name="name" className="grow entry" placeholder="Name" required />
+          </label>
+          <label className="flex items-center gap-2 m-5">
+            <input type="text" className="grow entry" placeholder="Email" name="email" required />
+          </label>
+          <div className="mx-5">
+              <textarea className=" w-full entry" placeholder="Message" name="message" required></textarea>
+              <button className="btn font-paraFont font-bold text-standard_navy my-5 w-full" type="submit">Submit Form</button>
+              <span className="text-white mx-auto font-paraFont font-bold">{result}</span>
+          </div>  
+        </form>
+  
+      </div>
+    );
+  }
+
+  export function ContactUs() {
+    const [isContact, setContact] = useState(0)
+    const selectContact = (e) => {
+      console.log(isContact)
+      setContact(e.target.value)
+      
+    }
+    return(
+      <div className= {"h-auto py-10 transition-colors duration-150 ease-in-out " + ((isContact == 0) ? "bg-standard_teal": "bg-standard_navy") }  >
+        <h2 className="font-headFont text-4xl text-center my-5 text-white">Contact Us</h2>
+        <select className="rounded-sm mx-auto block"  value={isContact} onChange={e => setContact(e.target.value)}>
+          <option value={0} >Book a Session</option>
+          <option value={1} >General Inquiry</option> 
+        </select>
+        <div className="mx-auto h-fit sm:w-3/4 w-full rounded-2xl bg-white">
+          <h3 className="font-headFont font-bold text-2xl text-standard_navy text-center pt-5 mt-5">{ (isContact == 0) ? "Book a Session NOW!" : "General Inquiry" }</h3>
+          {
+            (isContact == 0) ? 
+            <BookaSession /> :
+            <Contact />
+
+          }
+        </div>
+      </div>
+    )
   }
   

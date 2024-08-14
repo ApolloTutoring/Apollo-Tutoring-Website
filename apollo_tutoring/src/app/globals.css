@@ -36,10 +36,15 @@
   }
 
   .carousel_button {
-    @apply absolute top-1/2 w-10 h-10 px-2 py-0 cursor-pointer bg-nav_colour text-4xl rounded-full items-center self-center place-self-center hover:bg-standard_teal transition-colors ease-in duration-75
+    @apply absolute top-1/2 w-10 h-10 px-2 py-0 cursor-pointer bg-nav_colour text-4xl rounded-full items-center self-center place-self-center hover:bg-standard_teal transition-colors ease-in duration-75 hover:cursor-hover
   }
 
   .h2 {
     @apply font-headFont text-5xl text-center mb-5
+  }
+
+  .entry {
+    @apply font-paraFont text-black hover:text-white hover:bg-standard_navy placeholder:text-black  hover:placeholder:text-white
+    bg-standard_teal transition-colors ease-in duration-150 ps-5 py-1 rounded-md
   }
 }

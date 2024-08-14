@@ -3,19 +3,9 @@ import Image from "next/image";
 import { useSpring, animated } from "@react-spring/web";
 import { Carousel_Component } from "./components/carousel";
 import Footer from "./components/footer";
-import { useEffect } from "react";
-import dynamic from "next/dynamic";
 import { NavBar } from "./components/navbar";
-import Contact from "./components/contactus";
-import BookaSession from "./components/bookasession";
-
-/*
-const NavBar = dynamic(() => import('.//components/navbar.js').then((mod) => mod.NavBar), {
-  loading: () => <p>Loading...</p>,
-  ssr: false,
-})
-
-*/
+import { useState } from "react";
+import { ContactUs } from "./components/bookasession";
 
 export function Home() {
 
@@ -119,21 +109,19 @@ export function Home() {
           <img src="images/orange_planet.png" className=" px-5 w-7/12 mx-auto ease-out duration-500 hover:w-8/12 transition-all"/>
         </div>
       </div>
-      <div className="bg-standard_navy py-5">
+      <div className="bg-standard_navy py-5" id="testimonials">
         <h2 className="text-standard_white h2">Testimonials</h2>
           <Carousel_Component />
       </div>
-      <div className="w-3/4 mx-auto my-10">
+      <div className="w-3/4 mx-auto my-10" id="our-experiences">
         <h2 className="text-4xl text-standard_navy">Our Experience</h2>
-        <div className="grid sm:grid-cols-3 grid-cols-1">
+        <div className="grid lg:grid-cols-3 grid-cols-1">
           <div className="m-5 p-10 bg-standard_teal h-auto rounded-2xl">
             <h3 className="text-center text-black text-2xl font-headFont mb-5">IB Diploma Program</h3>
             <p className="text-center text-black font-paraFont">Learning course content can be difficult for many students, especially with their commitments outside of school. Students in high school need to balance their academics, extracurriculars, and a job all at once, which means that they often need to get ahead on course material before the school year begins.</p>
           </div>
-          <div className="m-5 bg-standard_navy h-auto rounded-2xl">
-            <div className="w-full h-full relative overflow-hidden">
-              <img src="/images/Untitled_design_1.jpeg" className=" w-full h-full absolute bottom-0 right-0 transform translate-x-1/2 translate-y-1/2"></img>
-            </div>
+          <div className="m-5 bg-standard_navy h-96 rounded-2xl relative overflow-clip">
+              <img src="/images/Untitled_design_1.jpeg" className=" w-full absolute bottom-0 right-0 transform translate-x-1/4 translate-y-1/6 -rotate-45" alt="Decorative Image"></img>
           </div>
           <div className="m-5 p-10 bg-standard_teal h-auto rounded-2xl">
             <h3 className="text-center text-black text-2xl font-headFont mb-5">IB Diploma Program</h3>
@@ -141,26 +129,10 @@ export function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-standard_navy h-auto p-10">
-        <div className="mx-auto h-fit sm:w-3/4 w-full m-20 rounded-2xl bg-white">
-          <h1 className="font-headFont font-bold text-2xl text-standard_navy text-center pt-5 mt-5">Book a Session NOW!</h1>
-          <BookaSession />
-        </div>
+      <div id="contact-us">
+      <ContactUs />
       </div>
-
-      <div className="h-3 bg-standard_teal"></div>
-      <div>
-        <h2 className="font-headFont text-4xl text-center my-5 text-standard_navy">Contact Us</h2>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 h-fit md:mx-10 divide-x-0 md:divide-x-2 divide-y-2 md:divide-y-0 gap-4">
-        <div className="shadow-2xl rounded-xl ">
-          <Contact />
-        </div>
-        <div className="shadow-2xl rounded-xl">
-          <iframe src="https://embedsocial.com/api/pro_hashtag/898c1f5d6b23404c0a60fe8791bc889ab9ac2a84" className="w-full h-full" frameborder="0" marginheight="" marginwidth="5"></iframe>
-        </div>
-      </div>
-      <div className="mt-5 h-3 bg-standard_teal"></div>
+      <iframe src="https://embedsocial.com/api/pro_hashtag/898c1f5d6b23404c0a60fe8791bc889ab9ac2a84" className=" mt-3 w-11/12 block h-96 mx-auto" frameborder="0" marginheight="" ></iframe>
       < Footer />
     </main>
 
