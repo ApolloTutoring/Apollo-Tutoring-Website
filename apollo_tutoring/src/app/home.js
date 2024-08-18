@@ -109,10 +109,12 @@ export function Home() {
           <img src="images/orange_planet.png" className=" px-5 w-7/12 mx-auto ease-out duration-500 hover:w-8/12 transition-all"/>
         </div>
       </div>
+      { /*
       <div className="bg-standard_navy py-5" id="testimonials">
         <h2 className="text-standard_white h2">Testimonials</h2>
           <Carousel_Component />
       </div>
+      */}
       <div className="w-3/4 mx-auto my-10" id="our-experiences">
         <h2 className="text-4xl text-standard_navy">Our Experience</h2>
         <div className="grid lg:grid-cols-3 grid-cols-1">

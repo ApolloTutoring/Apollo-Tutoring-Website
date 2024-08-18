@@ -70,9 +70,11 @@ export function NavBar() {
       <Link href = "#about-us" className = "nav-element">
         About Us
       </Link>
+      {/*
       <Link href = "#testimonials" className = "nav-element">
         Testimonials
       </Link>
+      */}
       <Link href = "#our-experiences" className = "nav-element">
         Our Experiences
       </Link>
