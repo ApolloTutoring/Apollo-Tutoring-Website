@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 
+
 export default function Contact() {
     const [result, setResult] = React.useState("");
   
@@ -8,7 +9,7 @@ export default function Contact() {
       setResult("Sending....");
       const formData = new FormData(event.target);
   
-      formData.append("access_key", "e6b70426-c5b4-4333-b608-e6edee8e81fd");
+      formData.append("access_key", api_key_contact);
   
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
