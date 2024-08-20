@@ -100,13 +100,13 @@ export function Home() {
           </ul>
         </div>
       </div>
-      <div id="about-us" className="grid grid-cols-1 lg:grid-cols-3 lg:mx-10 my-10 min-h-fit">
-        <div className="lg:col-span-2 px-7 pb-20">
+      <div id="about-us" className="grid grid-cols-1 lg:grid-cols-3 lg:mx-10 mt-16 min-h-fit">
+        <div className="lg:col-span-2 px-7 lg:pb-20 pb-10">
           <h2 className="text-nav_colour h2">About Us</h2>
           <p className="font-paraFont text-black mx-10 xl:mx-24">Learning course content can be difficult for many students, especially with their commitments outside of school. Students in high school need to balance their academics, extracurriculars, and a job all at once, which means that they often need to get ahead on course material before the school year begins. We offer online lessons and homework help to high school students to help jump-start their knowledge on both math and science courses. Our aim is to help students from Grades 9 to 11 with the transition from one grade to another, and facilitate the creation of strong technical skills to help them succeed. </p>
         </div>
-        <div>
-          <img src="images/orange_planet.png" className=" px-5 w-7/12 mx-auto ease-out duration-500 hover:w-8/12 transition-all"/>
+        <div className="flex-col flex justify-center">
+          <img src="images/orange_planet.png" className=" px-5 w-7/12 min-w-64 align-middle mx-auto ease-out duration-500 hover:w-8/12 transition-all inline-block"/>
         </div>
       </div>
       { /*
