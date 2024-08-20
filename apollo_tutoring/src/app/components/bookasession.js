@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import {api_key_contact } from "../../../config"
 
+const email = process.env.EMAIL_API
 
 export function BookaSession() {
     const [result, setResult] = React.useState("");
@@ -10,7 +10,7 @@ export function BookaSession() {
       setResult("Sending....");
       const formData = new FormData(event.target);
   
-      formData.append("access_key", api_key_contact);
+      formData.append("access_key", email );
   
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -86,7 +86,7 @@ export function BookaSession() {
       setResult("Sending....");
       const formData = new FormData(event.target);
   
-      formData.append("access_key", api_key_contact);
+      formData.append("access_key", email);
   
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
