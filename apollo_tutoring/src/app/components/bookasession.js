@@ -62,7 +62,7 @@ export function BookaSession() {
                     </select>
                 </div>
                 <div className="mx-1">
-                    <input type="text" placeholder="Availability (Ideal time and day of the week)" name="availability" className="entry input input-bordered w-full mx-1 text-sm sm:mx-auto" />
+                    <input type="text" placeholder="Availability (Ideal time and day of the week)" name="availability" className="entry input input-bordered w-full mx-1 sm:mx-auto" />
                 </div>
                 <div className="sm:col-span-2 mx-1 my-1">
                   <textarea class="entry textarea textarea-bordered w-full h-20 mx-1" placeholder="Notes (Program, Learning Disability, etc.):" name="notes"></textarea>
@@ -114,7 +114,7 @@ export function BookaSession() {
             <input type="text" className="grow input input-bordered entry bg-white" placeholder="Email" name="email" required />
           </label>
           <div className="mx-5">
-              <textarea className=" w-full input input-bordered entry bg-white" placeholder="Message" name="message" required></textarea>
+              <textarea className="w-full input input-bordered entry bg-white" placeholder="Message" name="message" required></textarea>
               <button className="btn font-paraFont font-bold text-standard_navy my-5 w-full" type="submit">Submit Form</button>
               <span className="text-white mx-auto font-paraFont font-bold">{result}</span>
           </div>  

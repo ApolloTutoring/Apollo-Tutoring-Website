@@ -45,6 +45,6 @@
 
   .entry {
     @apply font-paraFont text-black  border-0 hover:border-standard_navy hover:border-2 placeholder:text-black  
-    bg-standard_teal transition-colors ease-in duration-150 ps-5 py-1 rounded-md
+    bg-standard_teal transition-colors ease-in duration-150 ps-5 py-1 rounded-md placeholder:text-sm text-sm
   }
 }
