@@ -120,14 +120,14 @@ export function Home() {
         <div className="grid lg:grid-cols-3 grid-cols-1">
           <div className="m-5 p-10 bg-standard_teal h-auto rounded-2xl">
             <h3 className="text-center text-black text-2xl font-headFont mb-5">IB Diploma Program</h3>
-            <p className="text-center text-black font-paraFont">Learning course content can be difficult for many students, especially with their commitments outside of school. Students in high school need to balance their academics, extracurriculars, and a job all at once, which means that they often need to get ahead on course material before the school year begins.</p>
+            <p className="text-center text-black font-paraFont">Having gone through the IB Diploma Program and its enhance curriculum, our tutors are well versed in a variety of subjects, most notably mathematics, chemsitry, and phsyics. Our tutors have also been trained in the IB Global Mindset, providing them with the skills to aid any type of learner achieve their goals and beyond!</p>
           </div>
           <div className="m-5 bg-standard_navy h-96 rounded-2xl relative overflow-clip">
               <img src="/images/Untitled_design_1.jpeg" className=" w-full absolute bottom-0 right-0 transform translate-x-1/4 translate-y-1/6 -rotate-45" alt="Decorative Image"></img>
           </div>
           <div className="m-5 p-10 bg-standard_teal h-auto rounded-2xl">
-            <h3 className="text-center text-black text-2xl font-headFont mb-5">IB Diploma Program</h3>
-            <p className="text-center text-black font-paraFont">Learning course content can be difficult for many students, especially with their commitments outside of school. Students in high school need to balance their academics, extracurriculars, and a job all at once, which means that they often need to get ahead on course material before the school year begins.</p>
+            <h3 className="text-center text-black text-2xl font-headFont mb-5">Community Involvement</h3>
+            <p className="text-center text-black font-paraFont">Our tutors have extensive experience and community involvement. Whether it be in school math and coding tutoring or CEMC Math Contests, our tutors have developed an extensive list of skills fit to tutor your child. Moreover, our tutors lead initiatives such as the Math and Computing Club and many other educational extracurriculars at school.</p>
           </div>
         </div>
       </div>
