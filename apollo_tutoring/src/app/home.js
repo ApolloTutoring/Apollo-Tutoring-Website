@@ -127,7 +127,7 @@ export function Home() {
           </div>
           <div className="m-5 p-10 bg-standard_teal h-auto rounded-2xl">
             <h3 className="text-center text-black text-2xl font-headFont mb-5">Community Involvement</h3>
-            <p className="text-center text-black font-paraFont">Our tutors have extensive experience and community involvement. They lead many initiatives in Turner Fenton Secondary School such as the Math and Computing Club, HOSA and TurnerHacks. They hold executive positions in many other clubs as well. Their experience with educational extracurriculars at school gives them the necessary skills to help fellow students excel.</p>
+            <p className="text-center text-black font-paraFont">Our tutors have an extensive amount of experience and community involvement. They lead many initiatives within Turner Fenton Secondary School such as the Math and Computing Club, HOSA and TurnerHacks. Their experience with numerous educational extracurriculars both in and out of school gives them the necessary skills to help fellow students excel.</p>
           </div>
         </div>
       </div>
