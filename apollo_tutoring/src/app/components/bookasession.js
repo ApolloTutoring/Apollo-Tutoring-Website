@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 
-const email = process.env.EMAIL_API
+const email = "e6b70426-c5b4-4333-b608-e6edee8e81fd"
 
 export function BookaSession() {
     const [result, setResult] = React.useState("");
